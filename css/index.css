@@ -1,5 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -95,7 +93,6 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -128,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
+    content: "";
     content: none;
 }
 
@@ -138,7 +135,6 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-
 * {
     box-sizing: border-box;
 }
@@ -146,7 +142,7 @@ table {
 html,
 body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
 }
 
 h1,
@@ -154,173 +150,22 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+a {
+    text-decoration: none;
+}
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* END RESET */
+
+/*
+- set the width of the whole page
+- ensure content is displayed vertically
 */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-/* Styling for home page */
 
 body {
     max-width: 880px;
@@ -331,251 +176,94 @@ body {
     margin: 0 auto;
 }
 
-h1 {
-    font-size: 100px;
-}
+/*
+- space links and picture evenly and horizontally
+- give nav some space above and below
 
-.navContainer .navItem {
-    margin: auto;
-    padding: 20px;
-}
-
-.navContainer {
+*/
+body nav {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.navItem {
-    color: black;
-    padding: 1em 1.5em;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-/* made a media query for mobile to style nav in vertiacal */
-
-@media(max-width: 800px) {
-    .content_2 .logo {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .top-Section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bottom-section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navContainer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header_img {
-        display: none;
-    }
-
-    .middle-img {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.navItem:hover {
-    background-color: lightgray;
-}
-
-.navItem:active {
-    background-color: black;
-}
-
-.navItem:visited {
-    background-color: lightskyblue;
-}
-
-a {
-    text-decoration: none;
-}
-
-.content_2 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
-
-.top-Section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.top-Section .top_Section_item {
-    width: 400px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.getStartedBox {
-    display: inline-block;
-    width: 100px;
-    padding: 1px;
-    margin: 7px;
-    border: 1px solid black;
-    background: white;
-    color: black;
-}
-
-.bottom-section {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.bottom-section .bottom_Section_item {
-    width: 400px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.contact {
-    text-align: left;
-    padding: 10px;
-}
-
-/* Styling for services page beings here */
-
-.servicesParagraph {
-    text-align: left;
-}
-
-.top_Services {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-.services-header-img {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-}
-
-.bottom_Services {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-auto-flow: row;
-    grid-template-rows: repeat(auto-fit, auto);
-    grid-gap: 1em;
     justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    margin: 30px 0;
 }
 
-.bottom_Services .bottom_Services_item {
-    width: 400px;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid black;
-    background: lightgray;
+body nav a {
+    color: grey;
+    width: 14%;
+    text-align: center;
 }
 
-.learnMoreItem {
-    width: 100px;
-    padding: 1px;
-    margin: 7px;
-    border: 1px solid black;
-    background: white;
-    color: black;
-}
+/*
+- align header so that it's horizontal
 
-.contact_Services {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-auto-flow: column;
-    grid-template-rows: repeat(auto-fit, auto);
-    grid-gap: 1em;
-    justify-content: space-evenly;
-}
-
-.contact_Services .contact_Services_Item {
-    width: 400px;
-    margin: auto;
-    padding: 10px;
-}
-
-.services-info-img {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.circle {
-    list-style-type: circle;
-    text-align: left;
-    letter-spacing: 2px;
-}
-
-/* Product Page Styling */
-
-.product-filter {
+Note: You may notice I don't adjust the width sometimes. That's because I looked to see if that's necessary first by adding "border: 1px solid red;" to the element. If it naturally takes the full width, it's not necessary to tell it to.
+*/
+header {
     display: flex;
+    margin-bottom: 30px;
 }
 
-.product-filter h1 {
-    flex-grow: 1;
-}
-
-.sort {
-    display: flex;
-}
-
-.collection-sort {
+/* - Adjust the spacing around the "Innovation on Demand" and "Get Started" elements. */
+header section {
+    width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.products {
+/* - Style the "Innovation On Demand" text */
+header section h1 {
+    font-size: 48px;
+}
+
+/* - Style the "Get Started" button */
+header section button {
+    background: white;
+    width: 50%;
+    height: 32px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+/* - Style the round code picture */
+header img {
+    width: 50%;
+}
+
+/* - Style the dividing bar */
+hr {
+    border: 1px solid black;
+    width: 100%;
+}
+
+/*
+- Make sure the content text sections are displayed horizontally
+- give containers space from code image bar
+*/
+.content-sections {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.product-image img {
-    max-width: 50%;
+/* - Give content sub-sections space from one another */
+.sub-section {
+    margin: 20px 1%;
 }
 
-.product-info {
-    margin-top: auto;
+/* - Give space in between the content section, the contact section, and the footer */
+address {
+    margin: 20px 0;
 }
 
-@media (max-width: 920px) {
-    .product-card {
-        flex: 1 21%;
-    }
+/* - Space out the items in the contact section */
+address p {
+    padding: 5px 0;
 }
 
-@media (max-width: 600px) {
-    .product-card {
-        flex: 1 46%;
-    }
-}
-
-@media (max-width: 480px) {
-    .product-filter {
-        flex-direction: column;
-    }
-}
-
-.products .product-card:first-child,
-.products .product-card:nth-child(2) {
-    flex: 2 46%;
-}
-
+/* - Center the footer */
 footer {
     text-align: center;
 }

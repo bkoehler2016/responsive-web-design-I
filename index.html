@@ -4,47 +4,45 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Great Idea - Responsive I</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Great Idea!</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet" />
   <link rel="stylesheet" href="css/index.css" />
+
+  <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-  <nav class="navContainer">
-    <a class="navItem" href="/services.html">Services</a>
-    <a class="navItem" href="/product.html">Product</a>
-    <a class="navItem" href="#">Vision</a>
-    <a class="navItem" href="#">Features</a>
-    <a class="navItem" href="#">About</a>
-    <a class="navItem" href="#">Contact</a>
-    <a href="/index.html"><img class=" navItem logo" src="img/logo.png" alt="Great Idea! Company logo." /></a>
+  <nav>
+    <a href="#">Services</a>
+    <a href="#">Product</a>
+    <a href="#">Vision</a>
+    <a href="#">Features</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <img class="logo" src="img/logo.png" alt="Great Idea! Company logo." />
   </nav>
 
   <header>
-    <div class="content_2">
-      <section class="content_2_box text_content">
-        <h1>Innovation <br>
-          <h1>On</h1> <br>
-          <h1>Demand</h1>
-          <br>
-          <div class="getStartedBox">Get Started</div>
-      </section>
+    <section>
+      <h1>
+        Innovation<br />
+        On<br />
+        Demand
+      </h1>
 
-
-
-      <img class="header_img" src="img/header-img.png" alt="Image of a code snippet." />
-
-
-    </div>
-
-
+      <button>Get Started</button>
+    </section>
+    <img id="not-logo-but-still-in-header" src="img/header-img.png" alt="Image of a code snippet." />
   </header>
-  <hr>
 
-  <section class="top-Section">
-    <div class="top_Section_item">
+  <hr />
+  <section class="content-sections">
+    <div class="sub-section">
       <h2>Features</h2>
       <p>
         Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse
@@ -53,10 +51,8 @@
       </p>
     </div>
 
-
-    <div class="top_Section_item">
+    <div class="sub-section">
       <h2>About</h2>
-
       <p>
         Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse
         vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam
@@ -64,15 +60,11 @@
       </p>
     </div>
   </section>
-  <br>
 
-  <div>
-    <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen" />
-  </div>
-  <br>
-  <section class="bottom-section">
+  <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen" />
 
-    <div class="bottom_Section_item">
+  <section class="content-sections">
+    <div class="sub-section">
       <h2>Services</h2>
       <p>
         Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse
@@ -80,7 +72,8 @@
         convallis augue justo, at imperdiet metus scelerisque quis.
       </p>
     </div>
-    <div class="bottom_Section_item">
+
+    <div class="sub-section">
       <h2>Product</h2>
       <p>
         Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse
@@ -88,7 +81,8 @@
         convallis augue justo, at imperdiet metus scelerisque quis.
       </p>
     </div>
-    <div class="bottom_Section_item">
+
+    <div class="sub-section">
       <h2>Vision</h2>
       <p>
         Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse
@@ -97,15 +91,13 @@
       </p>
     </div>
   </section>
-  <br>
-  <section class="contact">
+  <hr />
+  <address>
     <h2>Contact</h2>
-    <p>123 Way 456 Street Somewhere, USA
-      <br><br>
-      1 (888) 888-8888
-      <br><br>
-      sales@greatidea.io</p>
-  </section>
+    <p>Way 456 Street Somewhere, USA</p>
+    <p>1 (888) 888-8888</p>
+    <p>sales@greatidea.io</p>
+  </address>
 
   <footer>
     Copyright Great Idea! 2018
