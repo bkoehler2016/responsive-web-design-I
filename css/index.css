@@ -157,20 +157,22 @@ h5 {
 
 /* Your code starts here! */
 
-/* Setup media query for 800px design */
-@media (max-width: 800px) {
+/* Setup media query for 500px design */
+@media (max-width: 500px) {
     #not-logo-but-still-in-header {
         display: none;
     }
 
     body nav {
         display: flex;
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
     }
 
     header {
         display: flex;
         margin-bottom: 30px;
+        justify-content: center;
     }
 
     header section h1 {
