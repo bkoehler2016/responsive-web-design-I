@@ -1,6 +1,5 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -348,7 +347,7 @@ h1 {
 }
 
 .navItem {
-    color: white;
+    color: black;
     padding: 1em 1.5em;
     text-decoration: none;
     text-transform: uppercase;
@@ -356,10 +355,34 @@ h1 {
 
 /* made a media query for mobile to style nav in vertiacal */
 
-@media screen and (max-width: 600px) {
-    .navItem a {
-        float: none;
-        width: 100%;
+@media(max-width: 800px) {
+    .content_2 .logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-Section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_img {
+        display: none;
+    }
+
+    .middle-img {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
