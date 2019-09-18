@@ -159,7 +159,7 @@ h5 {
 
 /* media query for 800px tablet */
 @media (max-width: 800px) {
-    body nav {
+    nav {
         display: flex;
         flex-flow: row-reverse wrap-reverse;
     }
@@ -167,6 +167,13 @@ h5 {
     #not-logo-but-still-in-header {
         display: none;
     }
+
+    header section {
+        display: flex;
+        flex-flow: row-reverse wrap-reverse;
+    }
+
+
 }
 
 /* Setup media query for 500px design */
@@ -175,12 +182,17 @@ h5 {
         display: none;
     }
 
-    a {
+    nav {
         display: flex;
-        flex-direction: column-reverse;
+        flex-flow: column-reverse nowrap;
+
+
     }
 
+    /* a {
 
+        border: 1px solid black;
+    } */
 
     header {
         display: flex;
