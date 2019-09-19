@@ -342,11 +342,13 @@ footer {
     .mainNav a {
         width: 100%;
         border-top: 1px solid black;
+        text-align: center
     }
 
     .mainNav a:nth-child(6n) {
         border-top: 1px solid black;
         width: 100%;
+        text-align: center;
     }
 
     a {
