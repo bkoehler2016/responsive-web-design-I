@@ -328,10 +328,13 @@ footer {
         display: none;
     }
 
+
+
     .mainNav {
         display: flex;
         flex-flow: column-reverse nowrap;
-        border-bottom: 1px solid black;
+        /* border-bottom: 1px solid black; */
+        align-items: center;
         width: 100%;
         /* border: 1px solid dodgerblue; */
 
@@ -341,15 +344,12 @@ footer {
 
     .mainNav a {
         width: 100%;
-        border-top: 1px solid black;
-        text-align: center
-    }
-
-    .mainNav a:nth-child(6n) {
-        border-top: 1px solid black;
-        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid black;
         text-align: center;
     }
+
+
 
     a {
         text-decoration: none;
